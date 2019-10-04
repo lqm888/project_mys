@@ -43,7 +43,7 @@ const zip = require('gulp-zip');
 const clean = require('gulp-clean');
 
 // 自动刷新
-var server = require('browser-sync').create();//执行函数返回对象
+const server = require('browser-sync').create();//执行函数返回对象
 
 // 自动加载
 // const load = require('gulp-load-plugins')();//立即执行之后得到一个加载对象
@@ -144,12 +144,14 @@ gulp.task('build', function(){
     .pipe(gulp.dest('./build'))
 })
 
+
 gulp.task('watch', function(){
     //监听各个目录的文件，如果有变动则执行相应的任务操作文件
     gulp.watch('./app/static/scripts/**/*.js',['js']);
     gulp.watch('./app/static/sass/**/*.scss',['sass']);
     gulp.watch('./app/views/**/*.html',['html']);
-    gulp.watch("./app/static/data/**/*.*",["data"])
+    gulp.watch("./app/static/data/**/*.*",["data"]);
+    
 })
 
 gulp.task('redist', function(){

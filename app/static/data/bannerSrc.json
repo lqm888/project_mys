@@ -1,0 +1,32 @@
+[
+    {
+        "id":"1",
+        "src":"/static/images/index/banner01-index-big.jpg",
+        "type":"img"
+    },
+    {
+        "id":"2",
+        "src":"/static/images/index/banner02-index-big.jpg",
+        "type":"img"
+    },
+    {
+        "id":"3",
+        "src":"/static/images/index/banner03-index-big.jpg",
+        "type":"img"
+    },
+    {
+        "id":"4",
+        "src":"/static/images/index/banner04-index-big.jpg",
+        "type":"img"
+    },
+    {
+        "id":"5",
+        "src":"/static/images/index/banner05-index-big.jpg",
+        "type":"img"
+    },
+    {
+        "id":"6",
+        "src":"/static/images/index/2017_Giant_Propel_Homepage-1.mp4",
+        "type":"video"
+    }
+]

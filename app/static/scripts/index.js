@@ -1,5 +1,8 @@
-$("#header").load("./head.html",function(){
-    $.getScript("../static/scripts/header.js")
+$("#header").load("/views/head.html",function(){
+    $.getScript("/static/scripts/header.js")
+})
+$("#footer").load("/views/footer.html",function(){
+    $.getScript("/static/scripts/footer.js")
 })
 
 
@@ -62,3 +65,5 @@ $.ajax({
         alert('请求失败');
     }
 })
+
+

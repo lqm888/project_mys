@@ -53,12 +53,15 @@ const server = require('browser-sync').create();//执行函数返回对象
 gulp.task('js', function(){
     // 取得scripts下的所有为.js的文件（**/的意思是包含所有子文件夹)
     gulp.src('./app/static/scripts/**/*.js')
+    //ES6转换成ES5
+    // .pipe(babel({ presets: ['@babel/env']}))
+    .pipe(babel())
     //错误管理模块（有错误时会自动输出提示到终端上）
     .pipe(plumber())
     //合并同一目录下的所有文件,并指定文件名
     // .pipe(concat('main.js'))
     //js压缩
-    .pipe(uglify())
+    // .pipe(uglify())
     //将合并压缩后的文件输出到dist/static/scripts下（如没有dist目录则自动生成dist）
     .pipe(gulp.dest('./dist/static/scripts'))
 });
@@ -77,6 +80,12 @@ gulp.task('sass', function(){
     .pipe(minifyCss())
     //将合并压缩后的文件输出到dist/static/css下（假如没有dist目录则自动生成dist目录）
     .pipe(gulp.dest('./dist/static/css'));
+    
+    //字体
+    gulp.src('./app/static/iconfont/**/*.*')
+    .pipe(plumber())
+    .pipe(minifyCss())
+    .pipe(gulp.dest('./dist/static/iconfont'));
 });
 
 gulp.task('icon',function(){

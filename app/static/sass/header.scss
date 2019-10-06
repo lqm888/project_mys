@@ -1,3 +1,4 @@
+
 #header{
     width:100%;
     overflow: hidden;
@@ -113,6 +114,11 @@
                         100%{
                             border-bottom:4px solid #006ebc; 
                         }
+                    }
+                    &.active{
+                        color: #006ebc;
+                        background: linear-gradient(#333,#333 50%, #2b3b46 100%);
+                        border-bottom:4px solid #006ebc; 
                     }
                 }
             }

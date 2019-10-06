@@ -1,0 +1,355 @@
+
+#footer{
+    height:538px;
+    .footer-main{
+        height: 482px;
+        background-color: #333333;
+        .W1260{
+            height: 100%;
+            .fm-top{
+                height: 247px;
+                border-bottom: 1px solid #444444;
+                .fm-top-left{
+                    float: left;
+                    width:500px;
+                    height: 165px;
+                    margin-top: 40px;
+                    .linkList{
+                        width: 125px;
+                        height: 100%;
+                        float: left;
+                        .title{
+                            line-height: 34px;
+                            height: 34px;
+                            color: #999999;
+                            margin-bottom:4px;
+                            h2{
+                                font-size: 24px;
+                            }
+                        }
+                        .listItem{
+                            width: 100%;
+                            height: 127px;
+                            .item{
+                                height: 26px;
+                                a{
+                                    display: block;
+                                    height: 100%;
+                                    line-height: 26px;
+                                    color:#fff;
+                                }
+                            }
+                        }
+                    }
+                }
+                .fm-top-right{
+                    float: right;
+                    width: 250px;
+                    margin-top: 40px;
+                    height: 207px;
+                    padding-bottom:20px;
+                    @mixin tipsWrap {
+                        height: 16px;
+                        color: #136ea3;
+                        font-size: 12px;
+                        line-height: 16px;
+                        text-align: right;
+                        margin-bottom: 10px;
+                    };
+                    .tell{
+                        width: 202px;
+                        overflow: hidden;
+                        float: right;
+                        .tellNum{
+                            text-align: right;
+                            height: 30px;
+                            line-height: 30px;
+                            font-size: 30px;
+                            color: #fff;
+                            font-weight: bold;
+                        }
+                        .tips{
+                            @include tipsWrap;
+                        }
+                    }
+                    .phone{
+                        width: 202px;
+                        overflow: hidden;
+                        float: right;
+                        .phoneNum{
+                            text-align: right;
+                            height: 20px;
+                            line-height: 20px;
+                            font-size: 20px;
+                            font-weight: bold;
+                            color:#fff;
+                        }
+                        .tips{
+                            @include tipsWrap;
+                        }
+                    }
+                    .codeList{
+                        height: 40px;
+                        .codeWrap{
+                            height: 100%;
+                            float: right;
+                            .item{
+                                width: 40px;
+                                height: 40px;
+                                float: left;
+                                margin-left: 5px;
+                                border-radius: 50%;
+                                cursor: pointer;
+                                position: relative;
+                                z-index: 1;
+                                .btn{
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 50%;
+                                    background-color: #262626;
+                                    line-height: 40px;
+                                    text-align: center;
+                                    cursor: pointer;
+                                    i{
+                                        font-size: 20px;
+                                        &.icon-weixin{
+                                            color: #4CAF50;
+                                        }
+                                        &.icon-weibo{
+                                            color: #d63b3b;
+                                        }
+                                    }
+                                    &.active{
+                                        background-color: #fff;
+                                        border-radius: 0 0 50% 50%;
+                                    }
+                                }
+                                .code{
+                                    width: 170px;
+                                    height: 186px;
+                                    box-sizing: border-box;
+                                    padding: 20px 20px 10px;
+                                    position: absolute;
+                                    right: 0;
+                                    bottom: 40px;
+                                    background-color: #fff;
+                                    z-index: 9;
+                                    display: none;
+                                    .codeImg{
+                                        width: 130px;
+                                        height: 130px;
+                                    }
+                                    .title{
+                                        height: 16px;
+                                        line-height: 16px;
+                                        font-size: 12px;
+                                        color:#999999;
+                                        text-align: center;
+                                    }
+                                }
+                                &.diyue{
+                                    .code .codeImg{
+                                        background: url(/static/images/index/qrcode_jieantedingyuehao.jpg) no-repeat 0 0;
+                                        background-size: 100%;
+                                    }
+                                }
+                                &.guanfangfuwu{
+                                    .code .codeImg{
+                                        background: url(/static/images/index/qrcode_jieanteguanfangfuwuhao.jpg) no-repeat 0 0;
+                                        background-size: 100%;
+                                    }
+                                }
+                                &.qixingdingyue{
+                                    .code .codeImg{
+                                        background: url(/static/images/index/qrcode_jieanteguanfangqixingshangpindingyuehao.jpg) no-repeat 0 0;
+                                        background-size: 100%;
+                                    }
+                                }
+                                &.weibo{
+                                    .code .codeImg{
+                                        background: url(/static/images/index/qrcode_jieanteguanfangweibo.png) no-repeat 0 0;
+                                        background-size: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .toRenGongKeFu{
+                        width: 100%;
+                        float: right;
+                        height: 35px;
+                        margin-top: 10px;
+                        a{
+                            display: block;
+                            float: right;
+                            width: 120px;
+                            height:35px;
+                            line-height: 34px;
+                            font-size: 12px;
+                            background-color: #0081e6;
+                            color:#fff;
+                            border-radius:3px;
+                            i{
+                                display: inline-block;
+                                font-size: 20px;
+                                margin-left: 20px;
+                                margin-right: 5px;
+                            }
+                            &:hover{
+                                background-color: #0072cc;
+                            }
+                        }
+                    }
+                }
+            }
+            .fm-bottom{
+                height: 234px;
+                .linkTitle{
+                    line-height: 16px;
+                    font-size: 12px;
+                    margin-top:20px;
+                    margin-bottom: 10px;
+                    color: #444444;
+                }
+                .linkWrap{
+                    height: 188px;
+                    .link-border{
+                        &::after{
+                            content: '';
+                            display: block;
+                            font-size: 0;
+                            width: 2px;
+                            height: 60px;
+                            background-color: #444444;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                        }
+                    }
+                    .linkList{
+                        float: left;
+                        position: relative;
+                        width:203px;
+                        padding: 0 13px 0 10px;
+                        box-sizing: border-box;
+                        .link-item{
+                            width: 100%;
+                            height: 26px;
+                            line-height: 26px;
+                            margin-bottom:2px;
+                            position: relative;
+                            a{
+                                display: block;
+                                width: 100%;
+                                height:100%;
+                                box-sizing:border-box;
+                                padding-left: 10px;
+                                background-color: #2b2b2b;
+                                color: #a2a2a2;
+                                &:hover{
+                                    color:#fff;
+                                    background-color: #333333;
+                                }
+                            }
+                            .iconLinkWrap{
+                                position: absolute;
+                                height: 100%;
+                                right: 0;
+                                top:0;
+                                i{
+                                    float: left;
+                                    width: 25px;
+                                    height: 100%;
+                                    background-color: #2b2b2b;
+                                    text-align: center;
+                                    line-height: 26px;
+                                    font-size: 18px; 
+                                    cursor: pointer;
+                                    position: relative;
+                                    &.icon-weixin{
+                                        color: #4CAF50;
+                                    }
+                                    &.icon-ico{
+                                        color: #666666;
+                                    }
+                                    .codeWrap{
+                                        width:170px;
+                                        height: 196px;
+                                        background-color: #fff;
+                                        box-sizing: border-box;
+                                        padding: 20px 20px 15px;
+                                        position: absolute;
+                                        bottom: 26px;
+                                        right: 0;
+                                        display: none;
+                                        .codeImg{
+                                            width: 100%;
+                                            height: 130px;
+                                            margin-bottom: 15px;
+                                        }
+                                        .title{
+                                            height: 16px;
+                                            line-height: 16px;
+                                            font-size: 12px;
+                                            color:#999999;
+                                            text-align: center;
+                                        }
+                                    }
+                                    &.active{
+                                        background-color: #fff;
+                                    }
+                                    &.livNvShengDC{
+                                        .codeWrap{
+                                            .codeImg{
+                                                background: url(/static/images/index/qrcode_Livnvshengdedanche.jpg) no-repeat 0 0;
+                                                background-size: 100%;
+                                            }
+                                        }
+                                    }
+                                    &.livNvShengDCFW{
+                                        .codeWrap{
+                                            .codeImg{
+                                                background: url(/static/images/index/qrcode_Livnvshengdedanchefuwuhao.jpg) no-repeat 0 0;
+                                                background-size: 100%;
+                                            }
+                                        }
+                                    }
+                                    &.julebu{
+                                        .codeWrap{
+                                            .codeImg{
+                                                background: url(/static/images/index/qrcode_jieantejulebu.png) no-repeat 0 0;
+                                                background-size: 100%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-bottom{
+        height: 56px;
+        background-color: #006ebc;
+        .copy{
+            width: 1300px;
+            max-width: 1300px;
+            height: 100%;
+            box-sizing: border-box;
+            padding:20px;
+            p{
+                height: 100%;
+                line-height: 16px;
+                font-size:12px;
+                color:#fff;
+                a{
+                    font-size: 12px;
+                    color:#fff;
+                }
+            }
+        }
+        
+    }
+}

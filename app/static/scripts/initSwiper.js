@@ -18,7 +18,7 @@ var mySwiper = new Swiper ('.swiper-container', {
     },
 
     // 生成分页器的时候执行
-    onPaginationRendered:function(swiper, paginationContainer){
+    onPaginationRendered:function(swiper){
         $(".swiper-pagination span").eq(swiper.realIndex).addClass("active").siblings().removeClass("active");
     },
 

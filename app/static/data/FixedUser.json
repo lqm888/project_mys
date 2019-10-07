@@ -1,0 +1,21 @@
+[
+    {
+        "id":"1",
+        "nickname":"l_qm",
+        "username":"13260585236",
+        "phone":"13260585236",
+        "email":""
+    },{
+        "id":"2",
+        "nickname":"zhangsan",
+        "username":"13212345678",
+        "phone":"13212345678",
+        "email":""
+    },{
+        "id":"3",
+        "nickname":"lisi",
+        "username":"13287654321",
+        "phone":"13287654321",
+        "email":""
+    }
+]

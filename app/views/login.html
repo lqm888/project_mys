@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>login</title>
+    <link rel="stylesheet" href="/static/css/swiper.css">
+    <link rel="stylesheet" href="/static/css/login.css">
+</head>
+<body>
+    <div class="login-header">
+        <div class="W1000">
+            <div class="logoWrap">
+                <a href="/views/index.html" class="giantLogo"></a>
+                <a href="/views/index.html" class="livLogo"></a>
+                <a href="/views/index.html" class="mmLogo"></a>
+            </div>
+        </div>
+    </div>
+    <div class="login-wrap">
+        <div class="banner">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="item1" data-src="/static/images/sign/login_bg_01.jpg"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item2" data-src="/static/images/sign/login_bg_02.jpg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="loginWrap W1000">
+            <div class="loginBox">
+                <form id="form_login">
+                    <div class="title">账号登录</div>
+                    <input type="text" id="loginname" name="" placeholder="手机号码" autocomplete="no">
+                    <input type="password" id="password" name="" placeholder="账号密码">
+                    <div class="btn_group">
+                        <button type="submit" class="btn btn_login">登录</button>
+                    </div>
+                    <div class="login_extra">
+                        <a href="./register.html">注册捷安特账号</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="login-tips">
+        <div class="tipsBox">
+            <div class="tipsTxt">!!!!</div>
+            <div class="btn">确认</div>
+        </div>
+    </div>
+
+    <script src="/static/scripts/jquery-1.8.3.js"></script>
+<script src="/static/scripts/swiper.js"></script>
+    <script type="module" src="/static/scripts/login.js"></script>
+</body>
+</html>

@@ -1,5 +1,4 @@
 import {mySwiper} from '/static/scripts/initSwiper.js';
-
 export function getBanner(){
     $.ajax({
         url:"/static/data/bannerSrc.json",

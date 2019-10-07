@@ -1,0 +1,206 @@
+@import './reset.css';
+
+.W1000{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.login-header{
+    height: 80px;
+    .W1000{
+        height: 100%;
+        .logoWrap{
+            width: 320px;
+            height: 100%;
+            position: relative;
+            a{
+                position: absolute;
+                height: 60px;
+                top: 20px;
+                left:0;
+                width: 320px;
+                &.giantLogo{
+                    background: url(/static/images/sign/giant_logo.png) no-repeat left center;
+                    background-size: auto 50%;
+                    animation: fadeIn 9s linear 0s infinite both;
+                }
+                &.livLogo{
+                    background: url(/static/images/sign/liv_logo.png) no-repeat left center;
+                    background-size: auto 50%;
+                    animation: fadeIn 9s linear 3s infinite both;
+                }
+                &.mmLogo{
+                    background: url(/static/images/sign/mmt_logo.png) no-repeat left center;
+                    background-size: auto 50%;
+                    animation: fadeIn 9s linear 6s infinite both;
+                }
+                @keyframes fadeIn {
+                    0%{opacity: 0}
+                    15%{opacity: 1}
+                    33.3333333%{opacity: 0}
+                    100%{opacity: 0}
+                }
+            }
+        }
+    }
+}
+.login-wrap{
+    position: absolute;
+    top: 80px;
+    bottom:0;
+    left: 0;
+    right: 0;
+    min-width: 800px;
+    .banner{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top:0;
+        z-index: 1;
+        .swiper-container{
+            height: 100%;
+            width: 100%;
+            .swiper-slide{
+                div{
+                    width: 100%;
+                    height: 100%;
+                    &.item1{
+                        background: url(/static/images/sign/login_bg_01.jpg) no-repeat center center;
+                        background-size: cover;
+                    }
+                    &.item2{
+                        background: url(/static/images/sign/login_bg_02.jpg) no-repeat center center;
+                        background-size: cover;
+                    }
+                }
+                // &:nth-of-type(1){
+                //     div{
+                //         background: url(/static/images/sign/login_bg_01.jpg) no-repeat center center;
+                //         background-size: cover;
+                //     }
+                // }
+                // &:nth-of-type(2){
+                //     div{
+                //         background: url(/static/images/sign/login_bg_02.jpg) no-repeat center center;
+                //         background-size: cover;
+                //     }
+                // }
+            }
+        }
+    }
+    .loginWrap{
+        position: relative;
+        height: 430px;
+        margin-top: 50px;
+        z-index: 9;
+        .loginBox{
+            width: 360px;
+            height: 100%;
+            float: right;
+            background-color: #fff;
+            box-sizing: border-box;
+            padding: 50px;
+            #form_login{
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+                padding-bottom: 20px;
+                .title{
+                    width: 100%;
+                    height: 26px;
+                    font-size: 18px;
+                    text-align: center;
+                    line-height: 26px;
+                    margin-bottom: 28px;
+                    color: #000;
+                }
+                input{
+                    width: 100%;
+                    height: 42px;
+                    box-sizing: border-box;
+                    border: 1px solid #cccccc;
+                    margin-bottom: 10px;
+                    color: #000000;
+                    font-size: 14px;
+                    padding: 10px;
+                    line-height: 20px;
+                }
+                .btn_group{
+                    width: 100%;
+                    height: 48px;
+                    margin-top: 25px; 
+                    .btn{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 2px;
+                        background-color: #0070bc;
+                        font-size: 16px;
+                        border: none;
+                        color: #fff;
+                        cursor: pointer;
+                    }
+                }
+                .login_extra{
+                    margin-top: 20px;
+                    line-height: 16px;
+                    font-size: 12px;
+                    color: #cccccc;
+                    text-align: right;
+                    a:hover{
+                        color: #0070bc;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.login-tips{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    display: none;
+    .tipsBox{
+        width: 300px;
+        height: 120px;
+        box-sizing: border-box;
+        padding: 20px;
+        position: absolute;
+        left: 0;
+        top:0;
+        right: 0;
+        bottom:0;
+        margin: auto;
+        background-color: #fff;
+        .tipsTxt{
+            height: 20px;
+            font-size: 14px;
+            line-height: 20px;
+            color: #757575;
+            text-align: center;
+        }
+        .btn{
+            height: 40px;
+            width: 100%;
+            background-color: #0081e6;
+            line-height: 40px;
+            font-size: 20px;
+            color: #fff;
+            border-radius: 3px;
+            text-align: center;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    }
+}
